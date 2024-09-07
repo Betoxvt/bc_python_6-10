@@ -33,7 +33,8 @@ aí pode rodar os reformatadores de boa. No pyproject.toml adicione:
 
 manda um `poetry run task format` (precisa adicionar o taskipy)
 
-configurações do commitizen também podem ser inseridas no pyproject.toml:
+O commitizen inicia com `cz init` ai vem as configurações vc pode adicionar uma tag ao git com `git tag 0.1.0` ai faz o commit com o formato `git commit -m "docs(readme): added new instructions"`
+configurações do commitizen também podem ser inseridas no pyproject.toml, exemplo:
 
     [tool.commitizen]
     name = "cz_conventional_commits"
