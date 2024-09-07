@@ -23,5 +23,5 @@ aí pode rodar os reformatadores de boa. No pyproject.toml adicione:
 manda um `poetry run task format` (precisa adicionar o taskipy)
 ## Pré-Commit
 Também é uma biblioteca (poetry add pre-commit) que serve, também, para verificar as paradas da PEP8 antes de qualquer add e commit.
-Ele segue uma estrutura de dicionário `chave: valor` e assim você pode falar para ele todos os pre-commits que deseja, no arquivo `.pre-commit-config-yaml`, como segurança (bandit), arquivos grandes, padrão de commit (commitizer), formatação... um monte de coisas.
+Ele segue uma estrutura de dicionário `chave: valor` e assim você pode falar para ele todos os pre-commits que deseja, no arquivo `.pre-commit-config-yaml`, como segurança (bandit), arquivos grandes, padrão de commit (commitizen), formatação... um monte de coisas.
 * depois de configurado manda um `poetry run pre-commit install` que vai adicionar ao .git
