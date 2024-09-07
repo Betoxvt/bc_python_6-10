@@ -1,6 +1,6 @@
 # Aula 06
 ## Revisão
-- Ambiente: `pyenv local 3.12.5` `poetry init` `poetry env use 3.12.5` `poetry shell` `poetry add ...` `touch .gitignore && echo '.venv' >> .gitignore` `poetry run ...`
+- Ambiente: `gh repo create --public <meu-novo-repositorio>` `git clone git@github.com:seu_usuario/meu-novo-repositorio.git` `touch .gitignore && echo '.env' >> .gitignore && echo '.venv' >> .gitignore` `pyenv local 3.12.5` `poetry init` `poetry env use 3.12.5` `poetry shell` `poetry add ...`  `poetry run ...`
 Boas práticas: [PEP 8 - Style Guide for Python Code](https://peps.python.org/pep-0008/)
 Classe usa a primeira letra maiúscula (DataFrame do pandas) enquanto função ou metodo usaria data_frame
 * criar o .env pras senhas tudo que for secret
@@ -10,6 +10,12 @@ Classe usa a primeira letra maiúscula (DataFrame do pandas) enquanto função o
 Entre os dois há diferenças. Número de caracteres na linha, o black permite 88 enquanto o flake 79. Para configurar a compatibilidade cria-se um arquivo `.flake8` na primeira linha `[flake8]` e em baixo outra linha `max-line-lenght = 89`
 * blue utiliza o black e o flake8 também e permite 89 caracteres
 * outras linhas para adicionar (claro depende do que a equipe devidir) `extend-ignore = E203,E701`
+exemplo:
+
+        [flake8]
+        max-line-length = 89
+        extend-ignore = E203,E701,W291
+        exclude = .venv
 
 Quando rodar vários juntos, eles acabam se bagunçando e para ajeitar vai no 'pyproject.toml' e insere:
 
@@ -26,6 +32,29 @@ aí pode rodar os reformatadores de boa. No pyproject.toml adicione:
      """
 
 manda um `poetry run task format` (precisa adicionar o taskipy)
+
+configurações do commitizen também podem ser inseridas no pyproject.toml:
+
+    [tool.commitizen]
+    name = "cz_conventional_commits"
+    version = "0.1.0"
+    version_files = [
+        "src/__version__.py",
+        "pyproject.toml:version"
+    ]
+    update_changelog_on_bump = true
+    style = [
+        ["qmark", "fg:#ff9d00 bold"],
+        ["question", "bold"],
+        ["answer", "fg:#ff9d00 bold"],
+        ["pointer", "fg:#ff9d00 bold"],
+        ["highlighted", "fg:#ff9d00 bold"],
+        ["selected", "fg:#cc5454"],
+        ["separator", "fg:#cc5454"],
+        ["instruction", ""],
+        ["text", ""],
+        ["disabled", "fg:#858585 italic"]
+    ]
 
 `isinstance(objeto, classinfo)` verifica o tipo e retorna booleano. bom para validar com if e else algumas coisas
 ## Pré-Commit
