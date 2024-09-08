@@ -1,6 +1,20 @@
 # Aula 06
 ## Revisão
-- Ambiente: `gh repo create --public <meu-novo-repositorio>` `git clone git@github.com:seu_usuario/meu-novo-repositorio.git` `touch .gitignore && echo '.env' >> .gitignore && echo '.venv' >> .gitignore` `pyenv local 3.12.5` `poetry init` `poetry env use 3.12.5` `poetry shell` `poetry add ...`  `poetry run ...`
+Ambiente:
+
+    gh repo create --public <meu-novo-repositorio>
+    echo '.env' >> .gitignore && echo '.venv' >> .gitignore && echo '# Nome do projeto' >> README.md
+    git init
+    git remote add origin git@github.com:seu_usuario/meu-novo-repositorio.git
+    pyenv local 3.12.5
+    poetry init
+    poetry env use 3.12.5
+    poetry shell
+    poetry add <...>
+    git add .
+    git commit -m "build(env): first commit"
+    git push -u origin main
+    poetry run <...>
 Boas práticas: [PEP 8 - Style Guide for Python Code](https://peps.python.org/pep-0008/)
 Classe usa a primeira letra maiúscula (DataFrame do pandas) enquanto função ou metodo usaria data_frame
 * criar o .env pras senhas tudo que for secret
@@ -64,3 +78,9 @@ Ele segue uma estrutura de dicionário `chave: valor` e assim você pode falar p
 * depois de configurado manda um `poetry run pre-commit install` que vai adicionar ao .git
 * adicionar o bandit e o commitizen é uma boa, veja a documentation
 * `pre-commit autoupdate`
+
+# Aula 07 - Funções em Python e Estrutura de dados (parte 1)
+* Permite reutilizar um código (função) em vários scripts.
+Digamos que vários scripts usam uma função, se necessário uma alteração na função (por exemplo um destino LOAD) basta alterar uma vez só e não 6000.
+* Lista de exercícios
+* Projeto: ler um csv, processar dados, calcular vendas e exibir resultados
