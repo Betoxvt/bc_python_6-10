@@ -14,6 +14,7 @@ taskipy = "^1.13.0"
 pre-commit = "^3.8.0"
 bandit = "^1.7.9"
 commitizen = "^3.29.0"
+pydantic = "^2.9.0"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
