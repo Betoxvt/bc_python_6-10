@@ -1,0 +1,9 @@
+2024-09-17 19:41:44.670 | INFO     | __main__:soma:9 - Soma ocorreu bem, 2 + 3 = 5
+2024-09-17 19:41:44.671 | INFO     | __main__:soma:9 - Soma ocorreu bem, 4 + 2 = 6
+2024-09-17 19:41:44.671 | CRITICAL | __main__:soma:12 - Você tem que digitar valores corretos
+2024-09-17 19:43:37.384 | INFO     | __main__:soma:10 - Soma ocorreu bem, 2 + 3 = 5
+2024-09-17 19:43:37.384 | INFO     | __main__:soma:10 - Soma ocorreu bem, 4 + 2 = 6
+2024-09-17 19:43:37.384 | CRITICAL | __main__:soma:13 - Você tem que digitar valores corretos
+2024-09-17 20:03:30.371 | INFO     | __main__:soma:17 - Soma ocorreu bem, 2 + 3 = 5
+2024-09-17 20:03:30.372 | INFO     | __main__:soma:17 - Soma ocorreu bem, 4 + 2 = 6
+2024-09-17 20:03:30.372 | CRITICAL | __main__:soma:20 - Você tem que digitar valores corretos

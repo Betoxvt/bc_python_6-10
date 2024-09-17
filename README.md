@@ -79,8 +79,17 @@ Ele segue uma estrutura de dicionário `chave: valor` e assim você pode falar p
 * adicionar o bandit e o commitizen é uma boa, veja a documentation
 * `pre-commit autoupdate`
 
-# Aula 07 - Funções em Python e Estrutura de dados (parte 1)
+# Aula 07: Funções em Python e Estrutura de dados (parte 1)
 * Permite reutilizar um código (função) em vários scripts.
 Digamos que vários scripts usam uma função, se necessário uma alteração na função (por exemplo um destino LOAD) basta alterar uma vez só e não 6000.
 * Lista de exercícios
 * Projeto: ler um csv, processar dados, calcular vendas e exibir resultados
+
+# Aula 08: Funções em Python - ETL com Pandas, JSON e Parquet
+Criar o múdlo de ETL que lê 3 arquivos JSON e concatena em um único Data Frame usando Pandas (+ os e glob), cria um novo DF com outra coluna e então exporta para CSV ou Parquet;
+Criar o módulo Pipeline que chama as funções da ETL e usa pathlib para manejar as pastas.
+
+# Aula 09: Funções em Python - Decoradores
+- LOG: Como se fosse um debug, mas não precisa estar ali fazendo. Registra as informações e erros, da avisos...
+    Usando a biblioteca loguru (open source)
+    Há o sentry_sdk que é ótimo, só cobra dependendo da quantidade de serviços (sentry.io)
