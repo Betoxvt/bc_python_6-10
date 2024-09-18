@@ -90,6 +90,11 @@ Criar o múdlo de ETL que lê 3 arquivos JSON e concatena em um único Data Fram
 Criar o módulo Pipeline que chama as funções da ETL e usa pathlib para manejar as pastas.
 
 # Aula 09: Funções em Python - Decoradores
-- LOG: Como se fosse um debug, mas não precisa estar ali fazendo. Registra as informações e erros, da avisos...
+* LOG: Como se fosse um debug, mas não precisa estar ali fazendo. Registra as informações e erros, da avisos...
     Usando a biblioteca loguru (open source)
     Há o sentry_sdk que é ótimo, só cobra dependendo da quantidade de serviços (sentry.io)
+
+* Decoradores: Funciona tanto para função quanto classe. Como uma função que recebe outra função, que recebe todos os parâmetros que o usuário colocar. Por isso normalmente é chamada de wrapper pois você envolve a função com essas funções adicionais. Ai põe ali no log de erro os try e except fica tudo já embalado pra usar nas funções. E você chama usando @tal_decorator.
+
+* tenacity decorator: biblioteca externa.
+tem o decorator retry, da uma quantidade de tentativas antes de abortar

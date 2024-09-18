@@ -1,3 +1,5 @@
+# Só pra testar os revisores de código
+
 import vaex
 
 arquivo_txt = "data/measurements.txt"
